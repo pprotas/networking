@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Networking.Assignment1.Classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Networking.Assignment1.Classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Networking.Assignment1.Classes.dll": {}
+        }
+      },
+      "Networking.Assignment1.Server/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Networking.Assignment1.Classes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Networking.Assignment1.Server.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Networking.Assignment1.Server.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Networking.Assignment1.Classes/1.0.0": {
+      "type": "project",
+      "path": "../Classes/Classes.csproj",
+      "msbuildProject": "../Classes/Classes.csproj"
+    },
+    "Networking.Assignment1.Server/1.0.0": {
+      "type": "project",
+      "path": "../Server/Server.csproj",
+      "msbuildProject": "../Server/Server.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Networking.Assignment1.Classes >= 1.0.0",
+      "Networking.Assignment1.Server >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\pawpr\\.nuget\\packages\\": {},
@@ -15,9 +53,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Client\\Client.csproj",
-      "projectName": "Client",
-      "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Client\\PortForwarder.csproj",
+      "projectName": "Networking.Assignment1.PortForwarder",
+      "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Client\\PortForwarder.csproj",
       "packagesPath": "C:\\Users\\pawpr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Client\\obj\\",
       "projectStyle": "PackageReference",
@@ -39,7 +77,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Classes\\Classes.csproj"
+            },
+            "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Server\\Server.csproj": {
+              "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Server\\Server.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

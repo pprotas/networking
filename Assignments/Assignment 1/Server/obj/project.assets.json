@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Networking.Assignment1.Classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Networking.Assignment1.Classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Networking.Assignment1.Classes.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Networking.Assignment1.Classes/1.0.0": {
+      "type": "project",
+      "path": "../Classes/Classes.csproj",
+      "msbuildProject": "../Classes/Classes.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Networking.Assignment1.Classes >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\pawpr\\.nuget\\packages\\": {},
@@ -16,7 +35,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Server\\Server.csproj",
-      "projectName": "Server",
+      "projectName": "Networking.Assignment1.Server",
       "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\pawpr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Server\\obj\\",
@@ -39,7 +58,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\pawpr\\source\\repos\\school\\Networking\\Assignments\\Assignment 1\\Classes\\Classes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

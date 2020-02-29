@@ -7,13 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignment 1", "Assignment 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignments", "Assignments", "{C23A8B7C-1B47-44A1-9A63-DA887B2FF39A}"
 	ProjectSection(SolutionItems) = preProject
-		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Assignments\Assignment 1\Server\Server.csproj", "{BF628CA5-1111-4DC6-B976-4192C8E54EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Assignments\Assignment 1\Server\Server.csproj", "{BF628CA5-1111-4DC6-B976-4192C8E54EF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Assignments\Assignment 1\Client\Client.csproj", "{B32D4468-6D70-4397-9465-6377600CC906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Assignments\Assignment 1\Client\Client.csproj", "{B32D4468-6D70-4397-9465-6377600CC906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

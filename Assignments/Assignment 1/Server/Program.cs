@@ -1,12 +1,29 @@
 ﻿using System;
+using System.Drawing;
+using System.Threading.Tasks;
 
-namespace Server
+namespace Networking.Assignment1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static Random random = new Random();
+
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Color randomColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+            string pageData =
+            "<!DOCTYPE>" +
+            "<html>" +
+            "  <head>" +
+            "    <title>WebServer</title>" +
+            "  </head>" +
+            $"  <body bgcolor=\"{ColorTranslator.ToHtml(randomColor)}\">" +
+            "  </body>" +
+            "</html>";
+
+            Console.Write("Port: ");
+            Server server = new Server(int.Parse(Console.ReadLine()), pageData);
+            await server.RunAsync();
         }
     }
 }

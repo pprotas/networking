@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Networking.Assignment1.Classes</AssemblyName>
+    <RootNamespace>Networking.Assignment1</RootNamespace>
+  </PropertyGroup>
+
+</Project>
